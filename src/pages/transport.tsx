@@ -1,0 +1,328 @@
+import { PageHeader } from '../components/page-header'
+
+// Transport Page with Bus Routes and Coverage
+export const TransportPage = () => {
+    return `
+    ${PageHeader(
+        'Transport Services',
+        'Safe, comfortable, and punctual transportation for our students',
+        '/static/images/SNS_BUS.jpg',
+        'Transport'
+    )}
+
+    <!-- Key Features -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Professional Transport Fleet</h2>
+                <p class="text-xl text-gray-600">Fleet of 20+ buses covering major areas of Coimbatore and its suburbs</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gradient-to-br from-sky-50 to-blue-50 rounded-2xl p-8 text-center card-hover border-b-4 border-sky-500">
+                    <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <i class="fas fa-bus text-4xl text-sky-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">20 Buses</h3>
+                    <p class="text-gray-600">Full fleet of comfortable buses</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-sky-50 to-sky-100 rounded-2xl p-8 text-center card-hover border-b-4 border-sky-500">
+                    <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <i class="fas fa-map-marked-alt text-4xl text-sky-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">GPS Tracking</h3>
+                    <p class="text-gray-600">Real-time location monitoring</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-sky-50 to-blue-50 rounded-2xl p-8 text-center card-hover border-b-4 border-sky-600">
+                    <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <i class="fas fa-shield-alt text-4xl text-sky-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">RFID Cards</h3>
+                    <p class="text-gray-600">Safe boarding system</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-sky-50 to-blue-50 rounded-2xl p-8 text-center card-hover">
+                    <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <i class="fas fa-snowflake text-4xl text-sky-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Air Conditioned</h3>
+                    <p class="text-gray-600">All buses fully AC</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bus Route Coverage -->
+    <section class="py-16 bg-gradient-to-br from-sky-50 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Bus Route Coverage Areas</h2>
+                <p class="text-xl text-gray-600 mb-2">We cover major areas across Coimbatore</p>
+                <p class="text-lg text-sky-600 font-semibold">🚨 Check if your area is covered before admission!</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white rounded-2xl p-8 shadow-lg border-t-4 border-sky-500">
+                    <h3 class="text-2xl font-bold mb-6 text-sky-600 flex items-center">
+                        <i class="fas fa-map-marker-alt mr-3"></i>
+                        Central Coimbatore
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-sky-600 mt-1 mr-3"></i>
+                            <span>RS Puram</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-sky-600 mt-1 mr-3"></i>
+                            <span>Race Course</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-sky-600 mt-1 mr-3"></i>
+                            <span>Town Hall</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-sky-600 mt-1 mr-3"></i>
+                            <span>Gandhipuram</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-sky-600 mt-1 mr-3"></i>
+                            <span>Saibaba Colony</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-lg border-t-4 border-sky-600">
+                    <h3 class="text-2xl font-bold mb-6 text-sky-600 flex items-center">
+                        <i class="fas fa-map-marker-alt mr-3"></i>
+                        East Coimbatore
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-sky-600 mt-1 mr-3"></i>
+                            <span>Peelamedu</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-sky-600 mt-1 mr-3"></i>
+                            <span>Hopes College</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-sky-600 mt-1 mr-3"></i>
+                            <span>Singanallur</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-sky-600 mt-1 mr-3"></i>
+                            <span>Ramanathapuram</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-sky-600 mt-1 mr-3"></i>
+                            <span>Ganapathy</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-lg border-t-4 border-sky-600">
+                    <h3 class="text-2xl font-bold mb-6 text-sky-600 flex items-center">
+                        <i class="fas fa-map-marker-alt mr-3"></i>
+                        West & South
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-sky-600 mt-1 mr-3"></i>
+                            <span>Vadavalli</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-sky-600 mt-1 mr-3"></i>
+                            <span>Thudiyalur</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-sky-600 mt-1 mr-3"></i>
+                            <span>Podanur</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-sky-600 mt-1 mr-3"></i>
+                            <span>Ukkadam</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-sky-600 mt-1 mr-3"></i>
+                            <span>Kuniyamuthur</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Check Your Area CTA -->
+            <div class="bg-gradient-to-r from-sky-500 to-blue-500 rounded-2xl p-8 text-white text-center">
+                <i class="fas fa-exclamation-circle text-5xl mb-4"></i>
+                <h3 class="text-3xl font-bold mb-4">Not Sure If Your Area Is Covered?</h3>
+                <p class="text-xl mb-6">Contact our transport coordinator to check route availability for your specific location</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="tel:+914224390470" class="bg-white text-sky-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center justify-center">
+                        <i class="fas fa-phone mr-2"></i>
+                        Call: +91 96299 37861
+                    </a>
+                    <a href="/contact" class="bg-white/20 backdrop-blur-lg hover:bg-white/30 text-white px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center justify-center">
+                        <i class="fas fa-envelope mr-2"></i>
+                        Send Inquiry
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Features -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-12">Safety Features</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-blue-50 to-sky-50 rounded-xl p-6">
+                    <i class="fas fa-tachometer-alt text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Speed Governor</h3>
+                    <p class="text-gray-600">All buses fitted with speed limiters for safety</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-sky-50 to-blue-50 rounded-xl p-6">
+                    <i class="fas fa-satellite-dish text-4xl text-sky-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">GPS Tracking</h3>
+                    <p class="text-gray-600">Real-time location monitoring system</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-blue-50 to-sky-50 rounded-xl p-6">
+                    <i class="fas fa-id-card text-4xl text-sky-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">RFID System</h3>
+                    <p class="text-gray-600">Smart cards for secure boarding</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-sky-50 to-sky-100 rounded-xl p-6">
+                    <i class="fas fa-first-aid text-4xl text-sky-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">First Aid Box</h3>
+                    <p class="text-gray-600">Fully equipped medical kit in every bus</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-indigo-50 to-sky-50 rounded-xl p-6">
+                    <i class="fas fa-user-shield text-4xl text-sky-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Trained Staff</h3>
+                    <p class="text-gray-600">Caretakers on every bus for student safety</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-gray-50 to-gray-200 rounded-xl p-6">
+                    <i class="fas fa-video text-4xl text-gray-900 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">CCTV Cameras</h3>
+                    <p class="text-gray-600">Video surveillance for complete security</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transport Rules -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-xl text-gray-600 mb-12">Important information for students and guardians</p>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-sky-500">
+                    <h3 class="text-2xl font-bold mb-6 text-sky-600">General Guidelines</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-clock text-sky-600 mt-1 mr-3"></i>
+                            <div>
+                                <strong>Punctuality:</strong> Students must report 5 minutes before bus arrival at their designated stops.
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-user-check text-sky-600 mt-1 mr-3"></i>
+                            <div>
+                                <strong>Boarding:</strong> Students must carry their valid ID cards and transport permit at all times.
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-calendar-alt text-sky-600 mt-1 mr-3"></i>
+                            <div>
+                                <strong>Changes:</strong> Route/stop changes require 1 month advance notice
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-sky-600 mt-1 mr-3"></i>
+                            <div>
+                                <strong>Communication:</strong> All requests via official email only
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-sky-500">
+                    <h3 class="text-2xl font-bold mb-6 text-sky-600">For Students</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-user-tie text-sky-600 mt-1 mr-3"></i>
+                            <div>
+                                <strong>Uniform:</strong> Professional college uniform mandatory
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-id-badge text-sky-600 mt-1 mr-3"></i>
+                            <div>
+                                <strong>ID Card:</strong> Institutional ID with transport details required
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-ban text-sky-600 mt-1 mr-3"></i>
+                            <div>
+                                <strong>Prohibited:</strong> Eating, drinking, or games in bus
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-users text-sky-600 mt-1 mr-3"></i>
+                            <div>
+                                <strong>Behavior:</strong> Maintain discipline; misbehavior may cancel service
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Information -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl p-12 text-center shadow-lg border-b-4 border-sky-500">
+                <i class="fas fa-clock text-6xl text-sky-600 mb-6 font-bold"></i>
+                <h2 class="text-4xl font-bold mb-4 text-gray-900 uppercase">College Timings</h2>
+                <p class="text-xl text-gray-700 mb-6">
+                    Buses are scheduled to ensure students arrive by <strong class="text-sky-600">8:15 AM</strong> daily
+                </p>
+                <p class="text-gray-600 mb-8">
+                    Routes are designed to minimize transit time and provide comfortable journeys
+                </p>
+                <a href="/contact" class="bg-sky-600 hover:bg-sky-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center shadow-lg">
+                    <i class="fas fa-info-circle mr-2"></i>
+                    Get Route Schedule
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact for Transport -->
+    <section class="py-16 bg-gradient-to-r from-sky-600 to-blue-600 text-white shadow-2xl">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-4 uppercase tracking-wide">Need Transport Information?</h2>
+            <p class="text-xl mb-8 opacity-90">
+                Contact our transport coordinator for route details, availability, and fees
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:+919629937861" class="bg-white text-sky-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center justify-center shadow-lg">
+                    <i class="fas fa-phone mr-2"></i>
+                    +91 96299 37861
+                </a>
+                <a href="mailto:info@snscahs.org" class="bg-white/20 backdrop-blur-lg hover:bg-white/30 text-white px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center justify-center">
+                    <i class="fas fa-envelope mr-2"></i>
+                    info@snscahs.org
+                </a>
+            </div>
+        </div>
+    </section>
+  `;
+};
